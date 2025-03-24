@@ -11,7 +11,6 @@ describe('Theme plugin tests', function() {
 	it('Enables and selects the theme', function() {
 		cy.login('admin', 'admin', 'publicknowledge');
 
-		cy.get('ul[id="navigationPrimary"] a:contains("Settings")').click();
 		cy.get('ul[id="navigationPrimary"] a:contains("Website")').click();
 		cy.get('button[id="plugins-button"]').click();
 
